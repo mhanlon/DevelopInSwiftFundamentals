@@ -1,4 +1,4 @@
-# DevelopWithSwiftFundamentals
+# DevelopInSwiftFundamentals
 A repository with the student materials from the Xcode 11 version of Develop with Swift Fundamentals
 
 This repo contains the Swift Playground labs from Apple's [Develop with Swift Fundamentals](https://books.apple.com/us/book/develop-in-swift-fundamentals/id1511184145) curriculum.
@@ -14,7 +14,7 @@ If you are taking the Develop with Swift Fundamentals course, you should fork th
 ![](images/fork.png)
 
 
-Then, in Terminal.app on your Mac, `cd` into the directory in which you keep your projects, then run `git clone https://github.com/<your username>/DevelopWithSwiftFundamentals.git`
+Then, in Terminal.app on your Mac, `cd` into the directory in which you keep your projects, then run `git clone https://github.com/<your username>/DevelopInSwiftFundamentals.git`
 
 ![](images/git-clone.png)
 
@@ -28,14 +28,14 @@ Read through the lessons and follow along wherever possible. At the end of each 
 ![](images/the-labs.png)
 
 
-When you've completed all the labs, `git add`, `git commit`, and `git push origin master` your code back up to Github. On the page for your fork of the repo `(https://github.com/<your_username>/DevelopWithSwiftFundamentals)` you'll push the button to create a new pull request:
+When you've completed all the labs, `git add`, `git commit`, and `git push origin master` your code back up to Github. On the page for your fork of the repo `(https://github.com/<your_username>/DevelopInSwiftFundamentals)` you'll push the button to create a new pull request:
 
 ![](images/new-pull-request-button.png)
 
 
 
 
-Make sure the base repository is `mhanlon/DevelopWithSwiftFundamentals` and the base is `master`, like so:
+Make sure the base repository is `mhanlon/DevelopInSwiftFundamentals` and the base is `master`, like so:
 
 ![](images/pull-request-base.png)
 
