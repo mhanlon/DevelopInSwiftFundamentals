@@ -10,7 +10,28 @@ import UIKit
 
  Write a failable initializer that takes parameters for your start and end times, and then checks to see if they are greater than 10 seconds apart using a guard statement. If they are, your initializer should fail. Otherwise, the initializer should set the properties accordingly.
  */
+struct Workout {
+    
+    var startTime: Double
+    var endTime: Double
+    
+    init?(startTime: Double, endTime: Double) {
+        guard endTime > (startTime + 10.0) else { return nil }
+        self.startTime = startTime
+        self.endTime = endTime
+    }
+    
+}
 
+if let workout = Workout(startTime: 1000, endTime: 1020) {
+    print(workout)
+}
+print(Workout(startTime: 1000, endTime: 1010))
+/*:
+ Imagine a screen where a user inputs a meal that they've eaten. If the user taps a "save" button without adding any food, you might want to prompt the user that they haven't actually added anything.
+
+ Using the `Food` struct and the text fields provided below, create a function called `logFood` that takes no parameters and returns an optional `Food` object. Inside the body of the function, use a guard statement to unwrap the `text` property of `foodTextField` and `caloriesTextField`. In addition to unwrapping `caloriesTextField`, you'll need to create and unwrap a new variable that initializes an `Int` from the text in `caloriesTextField`. If any of this fails, return `nil`. After the guard statement, create and return a `Food` object.
+ */
 
 /*:
  Imagine a screen where a user inputs a meal that they've eaten. If the user taps a "save" button without adding any food, you might want to prompt the user that they haven't actually added anything.
@@ -28,11 +49,20 @@ let caloriesTextField = UITextField()
 foodTextField.text = "Banana"
 caloriesTextField.text = "23"
 
-
+func logFood() -> Food? {
+    guard let foodText = foodTextField.text,
+        let caloriesText = caloriesTextField.text,
+        let calories = Int(caloriesText) else {
+            return nil
+    }
+    return Food(name: foodText, calories: calories)
+}
 /*:
  Call the function you made above and capture the return value. Unwrap the `Food` object with standard optional binding and print a statement about the food using each of its properties. Go back and change the text in `caloriesTextField` to a string that cannot be converted into a number. What happens in that case?
  */
-
+if let food = logFood() {
+    print(food)
+}
 
 /*:
 
