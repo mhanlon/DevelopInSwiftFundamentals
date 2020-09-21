@@ -1,2 +1,15 @@
-name: Swift Playgrounds
-  uses: thisIsTheFoxe/swift-playgrounds-action@v1
+name: Playgrounds CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  run-playgrounds:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: thisisthefoxe/swift-playgrounds-action@v1
