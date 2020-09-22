@@ -21,4 +21,4 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - uses: actions/xcode-playground-verifier-action@v1
+      - uses: xcode-playground-verifier-action@v1
