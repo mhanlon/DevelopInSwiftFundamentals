@@ -1,4 +1,4 @@
-import UIKit
+
 /*:
  ## Exercise - Guard Statements
 
@@ -20,6 +20,11 @@ struct User {
     var firstName: String
     var lastName: String
     var age: String
+}
+
+// A dummy UITextField to avoid command-line compilation errors for the Github action
+class UITextField {
+    var text: String?
 }
 
 let firstNameTextField = UITextField()

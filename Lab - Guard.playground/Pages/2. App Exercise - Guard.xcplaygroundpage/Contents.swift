@@ -21,6 +21,11 @@ struct Food {
     var name: String
     var calories: Int
 }
+// A dummy UITextField to avoid command-line compilation errors for the Github action
+class UITextField {
+    var text: String?
+}
+
 
 let foodTextField = UITextField()
 let caloriesTextField = UITextField()
