@@ -13,4 +13,5 @@ if number1 > number2 {
     largest = number2
 }
 
+largest = number1 > number2 ?number1:number2
 //: [Previous](@previous)  |  page 8 of 9  |  [Next: App Exercise - Ternary Messages](@next)

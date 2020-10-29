@@ -14,6 +14,8 @@ if steps < stepGoal / 2 {
     print("Over halfway!")
 }
 
+steps < stepGoal ? print("Almost halfway!"): print("Over halfway!")
+
 
 /*:
 

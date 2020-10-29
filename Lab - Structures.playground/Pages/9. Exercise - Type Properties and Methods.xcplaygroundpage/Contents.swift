@@ -4,6 +4,14 @@
  Imagine you have an app that requires the user to log in. You may have a `User` struct similar to that shown below. However, in addition to keeping track of specific user information, you might want to have a way of knowing who the current logged in user is. Create a `currentUser` type property on the `User` struct below and assign it to a `user` object representing you. Now you can access the current user through the `User` struct. Print out the properties of `currentUser`.
  */
 struct User {
+    
+    static var currentUser: User = User(userName: "robocop", email: "rjt97@me.com", age: 23)
+    
+    static func logIn(user: User) {
+        currentUser = user
+        print("\(currentUser.userName) is now logged in.")
+    }
+    
     var userName: String
     var email: String
     var age: Int
@@ -13,6 +21,6 @@ struct User {
  
  Below, call the `logIn(user:)` method and pass in a different `User` instance than what you assigned to currentUser above. Observe the printout in the console.
  */
-
-
+let newUser = User(userName: "JumbalayaJoe", email: "jjisthebest@me.com", age: 31)
+User.logIn(user: newUser)
 //: [Previous](@previous)  |  page 9 of 10  |  [Next: App Exercise - Type Properties and Methods](@next)
