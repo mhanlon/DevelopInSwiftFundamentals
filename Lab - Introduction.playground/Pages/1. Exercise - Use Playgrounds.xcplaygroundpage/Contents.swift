@@ -10,14 +10,17 @@ print("How to use playgrounds to make writing Swift fun and simple")
 /*:
  Now print your own phrases to the console. Pick one of your favorite songs. Use your knowledge of the `print` function to display the song title and artist.
  */
-
-
+/* My favorite song*/
+print("Title: \"Radioactive\", Artist: Imagine Dragons")
 /*:
  Use multiple `print` functions to write out some of the lyrics to the song.
  */
-
-
-
+/* Text of the song*/
+print("I'm waking up to ash and dust")
+print("I wipe my brow and I sweat my rust")
+print("I'm breathing in the chemicals")
+let textOfTheSong: String = "I'm waking up to ash and dust \nI wipe my brow and \nI sweat my rust I'm breathing in the chemicals"
+print(textOfTheSong)
 /*:
 
  _Copyright © 2018 Apple Inc._
