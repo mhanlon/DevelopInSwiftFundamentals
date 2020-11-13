@@ -10,12 +10,15 @@ print("How to use playgrounds to make writing Swift fun and simple")
 /*:
  Now print your own phrases to the console. Pick one of your favorite songs. Use your knowledge of the `print` function to display the song title and artist.
  */
-
-
+print("My favourite artist is Jeff Buckley.")
+print("One of my favourite song of Jeff Buckey is Vancouver.")
 /*:
  Use multiple `print` functions to write out some of the lyrics to the song.
  */
-
+print("Lady, all the troubles are my fright, I disgust you.")
+print("Feel the power. You cut the truth into you.")
+print("Why? Do you think I'd hidden out? On this rely")
+print("I could kiss you, with lines of escape in my mouth.")
 
 
 /*:
