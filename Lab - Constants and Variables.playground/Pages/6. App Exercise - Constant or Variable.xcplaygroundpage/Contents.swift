@@ -11,6 +11,16 @@
  - Goal number of steps: The user's goal for number of steps to take each day
  - Average heart rate: The user's average heart rate over the last 24 hours
  */
+let name = "Giovanna"
+print("It is fixed")
+var age = 30
+print("It every year change")
+var stepsDay = 10000
+print("Everyday it could change")
+let stepsGoal = 20000
+print("It is fixed ...")
+var averageHeartRate = 62
+print("Every day it could be different")
 
 
 
