@@ -8,6 +8,8 @@
 /*:
  Write a function that takes two `Int` arguments, and returns an `Int`. The function should multiply the two arguments, add 2, then return the result. Use the function and print the result.
  */
-
-
+func almostMultiply (firstArgument: Int, secondArgument: Int) ->Int {
+    firstArgument * secondArgument + 2
+}
+print(almostMultiply(firstArgument: 9, secondArgument: 5))
 //: [Previous](@previous)  |  page 5 of 6  |  [Next: App Exercise - Separating Functions](@next)
