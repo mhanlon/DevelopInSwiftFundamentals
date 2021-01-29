@@ -3,7 +3,7 @@
  
  Create a `name` constant and assign it a string literal representing your name.
  */
-
+let name = "Matt"
 
 /*:
  Create a `favoriteQuote` constant and assign it the following string literal:
