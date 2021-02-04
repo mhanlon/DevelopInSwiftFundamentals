@@ -12,7 +12,16 @@
  - Average heart rate: The user's average heart rate over the last 24 hours
  */
 
-
+let name = "Yannis"
+print("Name will never change")
+var age = 23
+print("Age update each birthday ")
+var numberOfSteps = 1360
+print("steps is updated throught day")
+let goalSteps = 3500
+print("Goal is fixed at given moment")
+var averageHeartRate = 75
+print("average will be updated throught day")
 
 
 

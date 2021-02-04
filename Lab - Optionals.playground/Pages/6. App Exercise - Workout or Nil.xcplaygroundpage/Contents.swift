@@ -9,12 +9,34 @@
 
  Write a failable initializer that takes parameters for your start and end times, and then checks to see if they are fewer than 10 seconds apart. If they are, your initializer should fail. Otherwise, they should set the properties accordingly.
  */
+struct Workout {
+    var startTime: Double
+    var endTime: Double
 
+    init?(startTime: Double, endTime: Double) {
+        if endTime - startTime < 10 {
+            return nil
+        } else {
+            self.startTime = startTime
+            self.endTime = endTime
+        }
+    }
+}
 
 /*:
  Try to initialize two instances of a `Workout` object and print each of them. One of them should not be initialized because the start and end times are too close together. The other should successfully initialize a `Workout` object.
  */
+let goodWorkout = Workout(startTime: 0, endTime: 1000)
+if let workout = goodWorkout {
+    print(workout.startTime)
+    print(workout.endTime)
+}
 
+let badWorkout = Workout(startTime: 0, endTime: 2)
+if let workout = badWorkout {
+    print(workout.startTime)
+    print(workout.endTime)
+}
 
 /*:
 
