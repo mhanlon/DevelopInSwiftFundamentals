@@ -9,7 +9,19 @@
  */
 let targetLowerBound = 120
 let targetUpperBound = 150
-let currentHR = 147
-
+let currentHR = 147 // test values 100 147 and 200
+let isInTarget = (currentHR <= targetUpperBound) && (currentHR > targetLowerBound)
+let isBelowTarget = currentHR < targetLowerBound
+let isAboveTarget = currentHR > targetUpperBound
+if isInTarget
+{
+    print("you are on track")
+}
+else if isBelowTarget{
+    print ("Go faster slowcoach")
+}
+else if isAboveTarget{
+    print ("Slow down you are on fire")
+}
 
 //: [Previous](@previous)  |  page 5 of 9  |  [Next: Exercise - Switch Statements](@next)
