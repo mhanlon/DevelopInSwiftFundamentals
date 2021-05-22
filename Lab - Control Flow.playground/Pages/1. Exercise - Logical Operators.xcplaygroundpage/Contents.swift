@@ -10,46 +10,67 @@
  
  1. `9 == 9`
  */
+print("true")
+print (9==9)
 
 
 /*:
  2. `9 != 9`
  */
-
+print("false")
+print (9 != 9)
 
 /*: 
  3. `47 > 90`
  */
+print("false")
+print (47 > 90)
 
 
 /*:
  4. `47 < 90`
  */
-
+print("true")
+print (47 < 90)
 
 /*:
  5. `4 <= 4`
  */
+print("true")
+print (4 <= 4) // less than or equal to
 
 
 /*:
  6. `4 >= 5`
  */
+print("false")
+print (4 >= 5)
 
 
 /*:
  7. `(47 > 90) && (47 < 90)`
  */
+print("false as both conditions cannot be true")
+let output = (47 > 90) && (47 < 90) // could not simply print it out as type bool could not be automatically set
+print (output)
+
+
+
+
 
 
 /*:
  8. `(47 > 90) || (47 < 90)`
  */
-
+let orResult = (47 > 90) || (47 < 90) // should be true
+print (orResult)
 
 /*:
  9. `!true`
  */
+print ("false")
+print (!true)
+
 
 
 //: page 1 of 9  |  [Next: Exercise - If and If-Else Statements](@next)
