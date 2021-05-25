@@ -9,7 +9,12 @@ let storedUserName = "TheFittest11"
 let storedPassword = "a8H1LuK91"
 let enteredUserName = "thefittest11"
 let enteredPassword: String = "a8H1Luk9"
-
+if(storedPassword.lowercased() == enteredPassword.lowercased() && storedPassword == enteredPassword){
+    print("You are now logged in!")
+}
+else{
+    print("Please check your user name and password and try again")
+}
 
 /*:
  Now that users can log in, they need to be able to search through a list of users to find their friends. This might normally be done by having the user enter a name, and then looping through all user names to see if a user name contains the search term entered. You'll learn about loops later, so for now you'll just work through one cycle of that. Imagine you are searching for a friend whose user name is StepChallenger. You enter "step" into a search bar and the app begins to search. When the app comes to the user name "stepchallenger," it checks to see if "StepChallenger" contains "step."
@@ -19,7 +24,13 @@ let enteredPassword: String = "a8H1Luk9"
 import Foundation
 let userName = "StepChallenger"
 let searchName = "step"
-
+if(userName.lowercased().contains(searchName.lowercased()))
+{
+    print("Found " + userName)
+}
+else{
+    print("Not found")
+}
 
 /*:
 
