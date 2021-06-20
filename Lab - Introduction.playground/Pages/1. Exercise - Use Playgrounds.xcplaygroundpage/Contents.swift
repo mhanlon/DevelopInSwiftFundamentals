@@ -10,12 +10,14 @@ print("How to use playgrounds to make writing Swift fun and simple")
 /*:
  Now print your own phrases to the console. Pick one of your favorite songs. Use your knowledge of the `print` function to display the song title and artist.
  */
-
+print("Harry Chapin - Cats in the craddle")
 
 /*:
  Use multiple `print` functions to write out some of the lyrics to the song.
  */
-
+print("And the cat's in the cradle and the silver spoon")
+print("Little boy blue and the man in the moon")
+print("\"When you coming home, dad?\" \"I don't know when\"")
 
 
 /*:

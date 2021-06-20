@@ -10,8 +10,21 @@ import UIKit
 
  Write a failable initializer that takes parameters for your start and end times, and then checks to see if they are greater than 10 seconds apart using a guard statement. If they are, your initializer should fail. Otherwise, the initializer should set the properties accordingly.
  */
+struct Workout{
+    var startTime: Double
+    var endTime: Double
+    
+    init?(start: Double, end: Double){
+        guard (end - start > 10) else {return nil}
+        self.startTime = start
+        self.endTime = end
+    }
+}
 
-
+let w1 = Workout.init(start: 0, end: 40)
+let w2 = Workout.init(start: 0, end: 2)
+print(w1)
+print(w2)
 /*:
  Imagine a screen where a user inputs a meal that they've eaten. If the user taps a "save" button without adding any food, you might want to prompt the user that they haven't actually added anything.
 
@@ -26,14 +39,25 @@ let foodTextField = UITextField()
 let caloriesTextField = UITextField()
 
 foodTextField.text = "Banana"
-caloriesTextField.text = "23"
+caloriesTextField.text = "23e"
 
-
+func logFood() -> Food? {
+    guard let uft = foodTextField.text,
+          let ucal = caloriesTextField.text,
+          let uical = Int(ucal) else {
+        return nil
+    }
+    return Food(name: uft, calories: uical)
+}
 /*:
  Call the function you made above and capture the return value. Unwrap the `Food` object with standard optional binding and print a statement about the food using each of its properties. Go back and change the text in `caloriesTextField` to a string that cannot be converted into a number. What happens in that case?
  */
-
-
+if let ufood = logFood(){
+    print("name: \(ufood.name), calories: \(ufood.calories)")
+}
+/*If the calories string can't be parsed into a number, the guard fails, and ufood can't be unwrapped
+ thus nothing is printed
+ */
 /*:
 
  _Copyright © 2018 Apple Inc._
