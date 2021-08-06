@@ -10,17 +10,24 @@ print("How to use playgrounds to make writing Swift fun and simple")
 /*:
  Now print your own phrases to the console. Pick one of your favorite songs. Use your knowledge of the `print` function to display the song title and artist.
  */
-
-
+print("The Waterboys - \"Good News\"")
+print("Leon Bridges - \"Smooth Sailin'\"")
 /*:
  Use multiple `print` functions to write out some of the lyrics to the song.
  */
-
+print("We can fight our desires, ooh")
+print("But when we start making fires")
+print("We get ever so hot, ooh")
+print("Whether we like it or not")
+print("They say we can love who we trust, ooh")
+print("But what is love without lust?")
+print("Two hearts with accurate devotions, ooh")
+print("What are feelings without emotions?")
 
 
 /*:
 
- _Copyright © 2018 Apple Inc._
+ _Copyright © 2021 Apple Inc._
 
  _Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:_
 

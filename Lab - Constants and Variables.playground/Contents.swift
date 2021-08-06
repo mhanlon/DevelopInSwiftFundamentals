@@ -30,21 +30,21 @@
 
 
 /*:
- Create a double variable with a value of 1.1. Update it to 2.2, 3.3, and 4.4. Print out the value after each assignment (again by referencing the variable you created).
+ Create a double variable with a value of 1.1. Update it to 2.2, 3.3, and 4.4, printing out the value after each assignment (again by referencing the variable you created).
  */
 
 
 /*:
- Create a Boolean variable and set it to `true`. Print the variable, then assign it a value of `false`, and print it again.
+ Create a boolean variable and set it to `true`. Print the variable, then assign it a value of `false`, and print it again.
  */
 
 
 /*:
- Create two variables: one with a value of 0, the other with a value of 0.0. Try to assign the second variable to the first, and you'll receive an error. Add the necessary type annotation to allow the second variable to be assigned to the first.
+ Create two variables, one with a value of 0, the other with a value of 0.0. Try to assign the second variable to the first, and you will receive an error. Add the necessary type annotation that will allow the second variable to be assigned to the first.
  */
 
 
 /*:
- Create a variable integer with a value of 1,000,000,000. Format it using commas, so it's easier to read.
+ Create a variable integer with a value of 1,000,000,000, ensuring that you format it so it is more readable (i.e. it's hard to read 1000000000, so make it easier to read).
  */
 

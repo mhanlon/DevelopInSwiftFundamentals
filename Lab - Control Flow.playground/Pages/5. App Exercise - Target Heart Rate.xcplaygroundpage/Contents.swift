@@ -1,5 +1,5 @@
 /*:
- ## App Exercise - Target Heart Rate
+## App Exercise - Target Heart Rate
  
  >These exercises reinforce Swift concepts in the context of a fitness tracking app.
  
@@ -11,5 +11,15 @@ let targetLowerBound = 120
 let targetUpperBound = 150
 let currentHR = 147
 
+let isInTarget = currentHR >= targetLowerBound && currentHR <= targetUpperBound
+let isBelowTarget = currentHR < targetLowerBound
+let isAboveTarget = currentHR > targetUpperBound
 
-//: [Previous](@previous)  |  page 5 of 9  |  [Next: Exercise - Switch Statements](@next)
+if isInTarget {
+    print("You're right on track!")
+} else if isBelowTarget {
+    print("You're doing great, but try to push it a bit!")
+}
+/*:
+[Previous](@previous)  |  page 5 of 9  |  [Next: Exercise - Switch Statements](@next)
+ */

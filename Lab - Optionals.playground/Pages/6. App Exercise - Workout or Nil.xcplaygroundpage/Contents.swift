@@ -1,5 +1,5 @@
 /*:
- ## App Exercise - Workout or Nil
+## App Exercise - Workout or Nil
 
  >These exercises reinforce Swift concepts in the context of a fitness tracking app.
 
@@ -9,21 +9,33 @@
 
  Write a failable initializer that takes parameters for your start and end times, and then checks to see if they are fewer than 10 seconds apart. If they are, your initializer should fail. Otherwise, they should set the properties accordingly.
  */
+struct Workout {
+    let startTime: Double
+    let endTime: Double
+    
+    init? (startTime: Double, endTime: Double) {
+        if endTime - startTime > 10 {
+            self.startTime = startTime
+            self.endTime = endTime
+        } else {
+            return nil
+        }
+    }
+}
 
-
+//:  Try to initialize two instances of a `Workout` object. Unwrap each of them and print its properties. One of them should not be initialized because the start and end times are too close together. The other should successfully initialize a `Workout` object.
+let myWorkout1 = Workout(startTime: 28_800, endTime: 28_810)
+let myWorkout2 = Workout(startTime: 28_800, endTime: 29_810)
+print(myWorkout1)
+print(myWorkout2)
 /*:
- Try to initialize two instances of a `Workout` object and print each of them. One of them should not be initialized because the start and end times are too close together. The other should successfully initialize a `Workout` object.
- */
-
-
-/*:
-
- _Copyright © 2018 Apple Inc._
+ _Copyright © 2021 Apple Inc._
 
  _Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:_
 
  _The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software._
 
  _THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE._
+ 
+[Previous](@previous)  |  page 6 of 6
  */
-//: [Previous](@previous)  |  page 6 of 6
