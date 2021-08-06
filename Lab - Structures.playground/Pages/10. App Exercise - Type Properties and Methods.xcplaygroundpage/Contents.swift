@@ -1,5 +1,5 @@
 /*:
- ## App Exercise - Type Properties and Methods
+## App Exercise - Type Properties and Methods
 
  >These exercises reinforce Swift concepts in the context of a fitness tracking app.
 
@@ -13,20 +13,32 @@ struct RunningWorkout {
     var distance: Double
     var time: Double
     var elevation: Double
+    
+    static var meterInFeet = 3.28084
+    static var mileInMeters = 1600.0
+    
+    static func mileTimeFor(distance: Double, time: Double) -> Double {
+        return  time / (distance / 1600)
+    }
 }
-/*:
- It may be helpful to have a few type properties on `RunningWorkout` representing unit conversions (i.e. meters to mile, feet to meters, etc.). Go back and add a type property for `meterInFeet` and assign it 3.28084. Then add a type property for `mileInMeters` and assign it 1600.0. Print both of these values below.
- */
+
+let myMileTime = RunningWorkout.mileTimeFor(distance: 10_000, time: 20)
+print(myMileTime)
+
+print("Meters in feet: \(RunningWorkout.meterInFeet)")
+print("Miles in meter: \(RunningWorkout.mileInMeters)")
+
+//:  It may be helpful to have a few type properties on `RunningWorkout` representing unit conversions (i.e. meters to mile, feet to meters, etc.). Go back and add a type property for `meterInFeet` and assign it 3.28084. Then add a type property for `mileInMeters` and assign it 1600.0. Print both of these values below.
 
 
 /*:
-
- _Copyright © 2018 Apple Inc._
+ _Copyright © 2021 Apple Inc._
 
  _Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:_
 
  _The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software._
 
  _THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE._
+ 
+[Previous](@previous)  |  page 10 of 10
  */
-//: [Previous](@previous)  |  page 10 of 10

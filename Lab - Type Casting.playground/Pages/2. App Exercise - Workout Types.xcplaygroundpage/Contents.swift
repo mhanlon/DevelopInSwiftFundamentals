@@ -1,5 +1,5 @@
 /*:
- ## App Exercise - Workout Types
+## App Exercise - Workout Types
 
  >These exercises reinforce Swift concepts in the context of a fitness tracking app.
 
@@ -42,24 +42,38 @@ var workouts: [Workout] = [
     Swim(stroke: "Freestyle", time: 523.6, distance: 500),
     Run(cadence: 90, time: 358.9, distance: 1600)
 ]
+//:  Write simple functions called `describeRun(runningWorkout:)` and `describeSwim(swimmingWorkout:)` that take a `Run` object and a `Swim` object, respectively. Neither should return values. Each function should print a description of the workout, including the run's cadence or the swim's stroke. Time is represented in seconds, distance is represented in meters, and cadence is represented in steps per minute.
+func describeRun(runningWorkout: Run) {
+    print("""
+        Cadence: \(runningWorkout.cadence) steps/minute
+        Time: \(runningWorkout.time) seconds
+        Distance: \(runningWorkout.distance) meters
+        
+        """)
+}
+
+func describeSwim(swimmingWorkout: Swim) {
+    print("""
+        Stroke: \(swimmingWorkout.stroke)
+        Time: \(swimmingWorkout.time) seconds
+        Distance: \(swimmingWorkout.distance) meters
+        
+        """)
+}
+//:  Now loop through each workout in `workouts` and, using type casting, call either `describeRun(runningWorkout:)` or `describeSwim(swimmingWorkout:)` on each. Observe what is printed to the console.
+for workout in workouts {
+    if let run = workout as? Run { describeRun(runningWorkout: run) }
+    if let swim = workout as? Swim { describeSwim(swimmingWorkout: swim) }
+}
+
 /*:
- Write simple functions called `describeRun(runningWorkout:)` and `describeSwim(swimmingWorkout:)` that take a `Run` object and a `Swim` object, respectively. Neither should return values. Each function should print a description of the workout, including the run's cadence or the swim's stroke. Time is represented in seconds, distance is represented in meters, and cadence is represented in steps per minute.
- */
-
-
-/*:
- Now loop through each workout in `workouts` and, using type casting, call either `describeRun(runningWorkout:)` or `describeSwim(swimmingWorkout:)` on each. Observe what is printed to the console.
- */
-
-
-/*:
-
- _Copyright © 2018 Apple Inc._
+ _Copyright © 2021 Apple Inc._
 
  _Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:_
 
  _The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software._
 
  _THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE._
+ 
+[Previous](@previous)  |  page 2 of 2
  */
-//: [Previous](@previous)  |  page 2 of 2

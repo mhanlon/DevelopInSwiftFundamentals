@@ -1,5 +1,5 @@
 /*:
- ## Exercise - Constant or Variable?
+## Exercise - Constant or Variable?
  
  Imagine you're creating a simple photo sharing app. You want to keep track of the following metrics for each post:
 - Number of likes: the number of likes that a photo has received
@@ -10,9 +10,11 @@
  
  For each of the metrics above, declare either a constant or a variable and assign it a value corresponding to a hypothetical post. Be sure to use proper naming conventions.
  */
-
-
-
-
-
-//: [Previous](@previous)  |  page 5 of 10  |  [Next: App Exercise - Fitness Tracker: Constant or Variable?](@next)
+var numberOfLikes = 7
+var numberOfComments = 2
+let yearCreated = 2011 //It probably won't change during the lifetime of a single code execution
+let monthCreated = 6
+let dayCreated = 11
+/*:
+[Previous](@previous)  |  page 5 of 10  |  [Next: App Exercise - Fitness Tracker: Constant or Variable?](@next)
+ */
